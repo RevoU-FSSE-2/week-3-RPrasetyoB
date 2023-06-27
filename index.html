@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyaa~</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <span>
+            <img class="hamburger-icon" src="./image/pngaaa.com-2275920.png" alt="hamburger icon" onclick="menu()">
+        </span>
+        <span>
+            <img class="cat-icon" src="https://media.tenor.com/oFeQLr4R2zQAAAAi/peach-cat-cute.gif" alt="cat icon">
+        </span>
+        <span class="letter-head">
+            <h3>Cat Owner Club</h3>
+        </span>
+        <ul>
+            <li class="home">
+                <a href="/">Home</a>
+            </li>
+            <li class="about"><a href="https://revou.co/" target="_blank">About</a>
+            </li>
+            <li class="contact"><a href="https://revou.co/" target="_blank">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>
+            The Happiness of Being Cat <s>Owner</s> Slave
+        </h1>
+        <p>
+            Warning..!! Brave Yourself for Cuty Pet Content Below
+        </p>
+    </header>
+    <main>
+        <section class = "benefit">
+            <h3>
+                Benefit of Owning a Cat
+            </h3>
+            <p>
+                Serve a cat can be an extremely rewarding relationship.<br>A cat has the ability to both calm your nervous system and provide an immediate outlet for fun and play.
+            </p>
+            <div class="grid-image">
+                <ul>
+                    <li><img src="./image/cat4.jpg" alt="cat photo"></li>
+                    <li><img src="./image/cat3.jpg" alt="cat photo"></li>
+                    <li><img src="./image/cat2.jpg" alt="cat photo"></li>
+                    <li><img src="./image/cat1.jpg" alt="cat photo"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="anatomy">
+            <figure class="cat-dabbing">
+                <img src="./image/anatomy.jpg" alt="cat dabbing">
+                <figcaption style="text-align: center;">Cat Dabbing</figcaption>
+            </figure>
+            <div class="cat-anatomy">
+                <h3>
+                    Cat Anatomy
+                </h3>
+                <ul>
+                    <li>
+                        Expressive Tail
+                    </li>
+                    <li>
+                        Impresive Streng and GG vision
+                    </li>
+                    <li>
+                        Flexible Skin and Smooth Fur
+                    </li>
+                    <li>
+                        Cute Paws
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="tips">
+            <h3>Tips How to pet Cat</h3>
+            <ol>
+                <li>
+                    Rule No.1 your Cat is Queen and your existence is for serve the Queen
+                </li>
+                <li>
+                    Dont pet a Cat if not ready to become a Slave
+                </li>
+                <li>
+                    3.00AM is time for your Cat activities dont argue about it
+                </li>
+                <li>
+                    Your Face is Cat best bed, for the sake of Cat mental healthiness
+                </li>
+                <li>
+                    Work harder and make money for Queen's Bright Future
+                </li>
+            </ol>
+            <div>
+                <img class="cat-pulling" src="https://media.giphy.com/media/E0cyxhawhe9dm/giphy.gif">
+            </div>
+        </section>
+        <section class="section-video">
+            <h3>Folowing video contained a Creature that more Dangerous than Cat</h3>
+            <div>
+                <iframe alt="video of kuru kuru" src="https://www.veed.io/embed/01e25ba6-b8cf-4412-bcfa-7e3c08387333" width="600" height="525" frameborder="0" title="KuruShutUp" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="section-form">
+            <h2>
+                Servant Registration Form
+            </h2>
+            <form action="#">
+                <fieldset>
+                    <legend>
+                        Personal Data
+                    </legend>
+                    <div>
+                        <label for="fullname">Full Name</label>
+                        <input id="fullname" type="text" placeholder="Enter your Full Name here" required>
+                    </div>
+                    <div>
+                        <label for="email">Email Adress</label>
+                        <input id="email" type="email" placeholder="Enter your Email here" required>
+                    </div>
+                    <div class="radio-choice">
+                        <div>
+                            <p style="margin-bottom: 5px;">Are you ready to be a servant?</p>
+                            <input id="servant-no" type="radio" name="beservant" value="no" onclick="img(0)">
+                            <label for="servant-no">No</label>
+                            <input id="servant-yes" type="radio"  name="beservant" value="yes" onclick="img(1)">
+                            <label for="servant-yes">Yes</label>
+                        </div>
+                        <div class="radio-img1">
+                            <img id="bite" src="./image/angy.jpg">
+                        </div>                       
+                    </div>
+                </fieldset>
+                <fieldset class="loyalty">
+                    <legend>
+                        Loyalty Check
+                    </legend>
+                    <div id="think-about">
+                        <p id="radio">What do you think about a Cat?</p>
+                        <input id="ugly" type="checkbox" name="why" onclick="dont()">
+                        <label for="ugly">Ugly</label>
+                        <input id="gorgeous" type="checkbox" name="why">
+                        <label for="gorgeous">Gorgeous</label>
+                        <input id="cute" type="checkbox" name="why">
+                        <label for="cute">Cute</label>
+                    </div>
+                    <div id="tell-us">
+                        <p>Tell us why you want Serve the cat?</p>
+                        <textarea rows="3"></textarea>
+                    </div>
+                    <div id="photo">
+                        <p>Upload your Majestic Cat picture here:</p>
+                        <input type="file" id="upload" name="catphoto" required accept="image/png, image/jpeg">
+                    </div>
+                </fieldset>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        Copyright ©2023 RPB. All reserved
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+</html>
