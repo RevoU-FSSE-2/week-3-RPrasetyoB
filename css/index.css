@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color:antiquewhite;
+    padding: 2px 20px;
+    border-radius: 5px;
+    align-items: center;
+    width: 100vw;
+}
+
+.top-nav {
+    margin: auto;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.sign {
+    display: flex;
+    text-align: end;
+    align-items: center;
+    gap: 20px;
+}
+
+.burger {
+    display: none; 
+}
+
+.line1, .line2, .line3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .line1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .line2 {
+    opacity: 0;
+}
+  
+.change .line3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.letter-head {
+    color: azure;
+    text-align: center;
+    padding-top: 60px;
+    height: 350px;
+    background-image: url(/image/sleep.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    border-radius: 5px;
+}
+
+.letter-head {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.benefit {
+    padding: 20px 20px;
+}
+
+.benefit ul li{
+    list-style-position: inside;
+    padding-left: 30px;
+}
+
+.benefit ul li::before{
+      content: "\00BB"
+}
+
+@media only screen and (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    header .sign {
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .letter-head {
+        font-size: medium;
+        gap: 10px;
+    }
+
+    .letter-head p {
+        line-height: 20px;
+        font-size: small;
+    }
+
+    .benefit p {
+        font-size: small;
+        line-height: 20px;
+    }
+
+    .benefit ul li {
+        font-size: small;
+        line-height: 20px;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .letter-head h1 {
+        font-size: large;
+    }
+
+    .benefit h3 {
+        font-size: large;
+    }
+
+}

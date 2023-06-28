@@ -4,55 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nyaa~</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <nav class="top-nav">
-        <span>
-            <img class="hamburger-icon" src="./image/pngaaa.com-2275920.png" alt="hamburger icon" onclick="menu()">
-        </span>
-        <span>
+    <header class="top-nav">
+        <div class="logo">
+            <h3>Cat Owner Clube</h3>
             <img class="cat-icon" src="https://media.tenor.com/oFeQLr4R2zQAAAAi/peach-cat-cute.gif" alt="cat icon">
-        </span>
-        <span class="letter-head">
-            <h3>Cat Owner Club</h3>
-        </span>
-        <ul>
-            <li class="home">
-                <a href="/">Home</a>
-            </li>
-            <li class="about"><a href="https://revou.co/" target="_blank">About</a>
-            </li>
-            <li class="contact"><a href="https://revou.co/" target="_blank">Contact Us</a>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <h1>
-            The Happiness of Being Cat <s>Owner</s> Slave
-        </h1>
-        <p>
-            Warning..!! Brave Yourself for Cuty Pet Content Below
-        </p>
+        </div>
+        <nav>                 
+            <ul>
+                <li class="home">
+                    <a href="/">Home</a>
+                </li>
+                <li class="about">
+                    <a href="https://revou.co/" target="_blank">About</a>
+                </li>
+                <li class="contact">
+                    <a href="https://revou.co/" target="_blank">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sign">
+            <a href>Log In</a>
+            <a href>Sign Up Now!</a>
+        </div>
+        <div class="burger" onclick="burger(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </header>
-    <main>
+    <main class="container">
+        <section class="letter-head">
+            <h1>
+                The Happiness of Being Cat <s>Owner</s> Slave
+            </h1>
+            <p>
+                Warning..!! Brave Yourself for Cuty Pet Content Below
+            </p>
+        </section>
         <section class = "benefit">
             <h3>
                 Benefit of Owning a Cat
             </h3>
             <p>
-                Serve a cat can be an extremely rewarding relationship.<br>A cat has the ability to both calm your nervous system and provide an immediate outlet for fun and play.
+                Serve a cat can be an extremely rewarding relationship. A cat has the ability to both calm your nervous system and provide an immediate outlet for fun and play.
+                <br>If you’re thinking of owning a cat, these are some of the key benefits:
             </p>
+            <ul>
+                <li>
+                    Lower stress and anxiety.
+                </li>
+                <li>
+                    Improve your cardiovascular health.
+                </li>
+                <li>
+                    Prevent allergies.
+                </li>
+                <li>
+                    Reduce feelings of loneliness.
+                </li>
+            </ul>
             <div class="grid-image">
                 <ul>
-                    <li><img src="./image/cat4.jpg" alt="cat photo"></li>
+                    <!-- <li><img src="./image/cat4.jpg" alt="cat photo"></li>
                     <li><img src="./image/cat3.jpg" alt="cat photo"></li>
                     <li><img src="./image/cat2.jpg" alt="cat photo"></li>
-                    <li><img src="./image/cat1.jpg" alt="cat photo"></li>
+                    <li><img src="./image/cat1.jpg" alt="cat photo"></li> -->
                 </ul>
             </div>
         </section>
-        <section class="anatomy">
+        <!-- <section class="anatomy">
             <figure class="cat-dabbing">
                 <img src="./image/anatomy.jpg" alt="cat dabbing">
                 <figcaption style="text-align: center;">Cat Dabbing</figcaption>
@@ -160,11 +183,11 @@
                 </fieldset>
                 <button type="submit">SUBMIT</button>
             </form>
-        </section>
+        </section> -->
     </main>
     <footer>
         Copyright ©2023 RPB. All reserved
     </footer>
-    <script src="/js/index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
