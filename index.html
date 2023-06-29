@@ -26,20 +26,17 @@
                 <li class="contact">
                     <a href="https://revou.co/" target="_blank">Contact Us</a>
                 </li>
-                <li class="help">
-                    <a href="https://revou.co/" target="_blank">Help</a>
-                </li>
             </ul>
+            <div class="sign">
+                <a href="/">Log In</a>
+                <a href="/">Sign Up Now!</a>
+            </div>
+            <div class="burger" onclick="burger(this)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
-        <div class="sign">
-            <a href="/">Log In</a>
-            <a href="/">Sign Up Now!</a>
-        </div>
-        <div class="burger" onclick="burger(this)">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
     </header>
     <main class="container">
         <section class="letter-head">
@@ -84,28 +81,57 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="anatomy">
-            <figure class="cat-dabbing">
-                <img src="./image/anatomy.jpg" alt="cat dabbing">
-                <figcaption style="text-align: center;">Cat Dabbing</figcaption>
-            </figure>
+        <section class="anatomy">
+            <h2>
+                Cat Anatomy
+            </h2>
             <div class="cat-anatomy">
-                <h3>
-                    Cat Anatomy
-                </h3>
+                <div class="slide-container">
+                    <div class="slider">
+                        <input type="radio" name="dot" id="dot1" checked>
+                        <input type="radio" name="dot" id="dot2">
+                        <input type="radio" name="dot" id="dot3">
+                        <input type="radio" name="dot" id="dot4">
+                        <picture class="slide-img" id="slide1">
+                            <img src="./image/vision.jpg" alt="cat's eyes vision photo">
+                            <label for="dot4" class="pre"></label>
+                            <label for="dot2" class="next"></label>
+                        </picture>
+                        <picture class="slide-img" id="slide2">
+                            <img src="./image/tail.jpg" alt="cat's tail photo">
+                            <label for="dot1" class="pre"></label>
+                            <label for="dot3" class="next"></label>
+                        </picture>
+                        <picture class="slide-img" id="slide3">
+                            <img src="./image/flexible.jpg" alt="cat's flexible body photo">
+                            <label for="dot2" class="pre"></label>
+                            <label for="dot4" class="next"></label>
+                        </picture>
+                        <picture class="slide-img" id="slide4">
+                            <img src="./image/paw.png" alt="cat's paw photo">
+                            <label for="dot3" class="pre"></label>
+                            <label for="dot1" class="next"></label>
+                        </picture>
+                        <div class="silder-nav">
+                            <label for="dot1" class="bar" id="bar1"></label>
+                            <label for="dot2" class="bar" id="bar2"></label>
+                            <label for="dot3" class="bar" id="bar3"></label>
+                            <label for="dot4" class="bar" id="bar4"></label>
+                        </div>
+                    </div>
+                </div>     
                 <ul>
                      <li>
-                        Imba vision
+                        <label for="dot1">Good Vision</label>
                     </li>
                     <li>
-                        Expressive Tail
-                    </li>
-                   
-                    <li>
-                        Flexible Skin and Smooth Fur
+                        <label for="dot2">Expressive Tail</label>
                     </li>
                     <li>
-                        Cute Paws
+                        <label for="dot3">Flexible Skin and Smooth Fur</label>
+                    </li>
+                    <li>
+                        <label for="dot4">Cute Paws</label>
                     </li>
                 </ul>
             </div>
@@ -129,16 +155,7 @@
                     Work harder and make money for Queen's Bright Future
                 </li>
             </ol>
-            <div>
-                <img class="cat-pulling" src="https://media.giphy.com/media/E0cyxhawhe9dm/giphy.gif">
-            </div>
-        </section>
-        <section class="section-video">
-            <h3>Folowing video contained a Creature that more Dangerous than Cat</h3>
-            <div>
-                <iframe alt="video of kuru kuru" src="https://www.veed.io/embed/01e25ba6-b8cf-4412-bcfa-7e3c08387333" width="600" height="525" frameborder="0" title="KuruShutUp" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-        </section>
+           
         <section class="section-form">
             <h2>
                 Servant Registration Form
@@ -193,7 +210,7 @@
                 </fieldset>
                 <button type="submit">SUBMIT</button>
             </form>
-        </section> -->
+        </section>
     </main>
     <footer>
         Copyright ©2023 RPB. All reserved
