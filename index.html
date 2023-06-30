@@ -33,13 +33,13 @@
                 <a href="/">Sign Up Now!</a>
             </div>
             <input type="checkbox" id="burger">
-            <label for="burger" class="toggle">
+            <label for="burger" id="toggle">
                 <span class="top-line common"></span>
                 <span class="mid-line common"></span>
                 <span class="bot-line common"></span>
             </label>
         </nav>
-        <div class="nav-mobile d-none">
+        <div id="nav-mobile">
             <ul class="sideBar">
                 <li class="sideItem">
                     <a href="/">Home</a>
@@ -52,8 +52,8 @@
                 </li>
             </ul>
             <div class="sign-side">
-                <a href="/">Log In</a>
-                <a href="/">Sign Up Now!</a>
+                <a href="/" id="log">Log In</a>
+                <a href="/" id="now">Sign Up Now!</a>
             </div>
         </div>
     </header>
@@ -166,11 +166,11 @@
                     </legend>
                     <div>
                         <label for="fullname">Full Name</label>
-                        <input id="fullname" type="text" placeholder="Enter your Full Name here" required>
+                        <input id="fullname" type="text" placeholder=" Enter your Full Name here" required>
                     </div>
                     <div>
                         <label for="email">Email Adress</label>
-                        <input id="email" type="email" placeholder="Enter your Email here" required>
+                        <input id="email" type="email" placeholder=" Enter your Email here" required>
                     </div>
                     <div class="radio-choice">
                         <div>
@@ -200,7 +200,7 @@
                     </div>
                     <div id="tell-us">
                         <p>Tell us why you want Serve the cat?</p>
-                        <textarea rows="3" placeholder="Type your reason here" name="Reason"></textarea>
+                        <textarea rows="3" placeholder=" Type your reason here" name="Reason"></textarea>
                     </div>
                     <div id="photo">
                         <p>Upload your Majestic Cat picture here:</p>

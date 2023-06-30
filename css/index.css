@@ -13,7 +13,10 @@
     width: 90%;
     margin: auto;
     align-items: center;
+    font-size: larger;
 }
+
+/* Header */
 
 header {
     position: fixed;
@@ -100,11 +103,13 @@ header nav a:hover {
     color: rgb(245, 128, 147);
 }
 
+/* Mobile Navigation */
+
 #burger {
     display: none;
 }
 
-.toggle {
+#toggle {
     display: none;
     position: absolute;
     height: 30px;
@@ -118,7 +123,7 @@ header nav a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
-.toggle .common {
+#toggle .common {
     position: absolute;
     height: 2px;
     width: 20px;
@@ -127,47 +132,47 @@ header nav a:hover {
     transition: 0.3s ease;
 }
 
-.toggle .top-line {
+#toggle .top-line {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.toggle .mid-line {
+#toggle .mid-line {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.toggle .bot-line {
+#toggle .bot-line {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-#burger:checked ~ .toggle .top-line {
+#burger:checked ~ #toggle .top-line {
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(-45deg);
 }
 
-#burger:checked ~ .toggle .bot-line {
+#burger:checked ~ #toggle .bot-line {
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(45deg);
 }
 
-#burger:checked ~ .toggle .mid-line {
+#burger:checked ~ #toggle .mid-line {
     opacity: 0;
     transform: translateX(20px);
 }
 
-.nav-mobile {
-    position: absolute;
+#nav-mobile {
+    position: fixed;
     top: 0;
-    right: 0;
+    right: -200px;
     height: 100vh;
     width: 200px;
     background-color: rgba(248, 200, 141, 0.959);
@@ -177,20 +182,18 @@ header nav a:hover {
     padding: 20px 10px;
     padding-top: 70px;
     border-radius: 5px;
-    scroll-behavior: smooth;
-    transition: all 1s ease;
+    transition: right 500ms linear;
 }
 
-.nav-mobile.d-none {
-    display:none;
-    transition: all 1s ease;
+#nav-mobile.active {
+    right: 0px;
 }
 
-.nav-mobile ul li {
+#nav-mobile ul li {
     line-height: 80px;
 }
 
-.nav-mobile a {
+#nav-mobile a {
     font-family: cursive;
     font-weight: 550;
     font-size: 18px;
@@ -198,7 +201,7 @@ header nav a:hover {
     text-decoration: none;
 }
 
-.nav-mobile a:hover {
+#nav-mobile a:hover {
     color: rgb(245, 128, 147);
 }
 
@@ -210,23 +213,23 @@ header nav a:hover {
     margin-top: 20px;
 }
 
-.sign-side a{
-    font-family: verdana;
-    text-decoration: underline;
-    gap: 100px;
-    line-height: 50px;
-}
-
-.sign-side a:nth-child(2){
+.sign-side #now {
     padding: 4px 6px;
     background-color: rgb(56, 83, 133);
     border-radius: 5px;
     color: azure;
+    font-family: verdana;
+    text-decoration: underline;
+    gap: 100px;
+    line-height: 50px;
+    margin-top: 20px;
 }
 
 .sign-side a:nth-child(2):hover{
     color: rgb(245, 128, 147);
 }
+
+/* Main content */
 
 section{
     background-color: rgb(247, 244, 241);
@@ -286,19 +289,22 @@ section{
 
 .grid .grid-image {
     display: grid;
-    grid-auto-columns: repeat(4, 1fr);
-    grid-auto-rows: repeat(3, 1fr);
+    grid-auto-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px 300px 300px;
     grid-gap: 5px;
     padding: 5px;
     background-color: black;
     border-radius: 5px;
 }
 
-.grid .grid-image .grid-item {
+.grid .grid-image img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+.grid .grid-image .grid-item {
     border-radius: 3px ;
-    object-fit: cover;
     overflow: hidden;
 }
 
@@ -308,28 +314,8 @@ section{
 }
 
 #two {
-    grid-column: 2 / span 3 ;
+    grid-column: 2 / span 2;
     grid-row: 1;
-}
-
-#three {
-    grid-column: 2;
-    grid-row: 2 / span 3;
-}
-
-#four {
-    grid-column: 3;
-    grid-row: 2 / span 1;
-}
-
-#five {
-    grid-column: 3;
-    grid-auto-rows: 3 / span 1;
-}
-
-#six {
-    grid-column: 4;
-    grid-row: 2 / span 3;
 }
 
 .anatomy {
@@ -442,6 +428,8 @@ section{
     
 }
 
+/* Registration form section */
+
 .section-form{
     margin-left: 0%;
     background-color: rgba(219, 213, 206, 0.575);
@@ -526,6 +514,8 @@ button{
     border-radius: 5px;
 }
 
+/* footer */
+
 footer{
     align-items: center;
     text-align: center;
@@ -546,9 +536,35 @@ footer{
         display: none;
     }
 
-    .toggle {
+    #toggle {
         display: block;
     }
+
+    .grid .grid-image {
+        display: grid;
+        grid-auto-columns: repeat(3, 1fr);
+        grid-auto-rows: 200px 200px 200px 200px;
+    }
+    #one {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 2;
+    }
+
+    #two {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+
+    #four {
+        grid-column: 1 / span 3;
+        grid-row: 4;
+    }
+
+    #six {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
 
     textarea{
         width: 100%;
@@ -581,6 +597,42 @@ footer{
         line-height: 20px;
         padding-left: 0;
     }
+
+    .grid .grid-image {
+        display: grid;
+        grid-auto-columns: repeat(4, 1fr);
+        grid-auto-rows: 150px 150px 150px 150px;
+    }
+    #one {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    #two {
+        grid-column: 1 / span 4;
+        grid-row: 1;
+    }
+
+    #three {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+
+    #four {
+        grid-column: 1 / span 4;
+        grid-row: 3;
+    }
+
+    #five {
+        grid-column: 3 / span 2;
+        grid-row: 4;
+    }
+
+    #six {
+        grid-column: 3 / span 2;
+        grid-row: 2;
+    }
+
 }
 
 @media only screen and (max-width: 320px) {
