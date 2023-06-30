@@ -112,21 +112,29 @@
                         <input type="radio" name="dot" id="dot3">
                         <input type="radio" name="dot" id="dot4">
                         <picture class="slide-img" id="slide1">
+                            <source media="(max-width:599px)" srcset="./image/vision-crop.jpg 500w"/>
+                            <source media="(min-width:600px)" srcset="./image/vision.jpg 700w"/>
                             <img src="./image/vision.jpg" alt="cat's eyes vision photo">
                             <label for="dot4" class="pre"></label>
                             <label for="dot2" class="next"></label>
                         </picture>
                         <picture class="slide-img" id="slide2">
+                            <source media="(max-width:599px)" srcset="./image/tail-crop.jpg 500w"/>
+                            <source media="(min-width:600px)" srcset="./image/tail.jpg 700w"/>
                             <img src="./image/tail.jpg" alt="cat's tail photo">
                             <label for="dot1" class="pre"></label>
                             <label for="dot3" class="next"></label>
                         </picture>
                         <picture class="slide-img" id="slide3">
+                            <source media="(max-width:599px)" srcset="./image/flexible-crop.jpg 500w"/>
+                            <source media="(min-width:600px)" srcset="./image/flexible.jpg 700w"/>
                             <img src="./image/flexible.jpg" alt="cat's flexible body photo">
                             <label for="dot2" class="pre"></label>
                             <label for="dot4" class="next"></label>
                         </picture>
                         <picture class="slide-img" id="slide4">
+                            <source media="(max-width:599px)" srcset="./image/paw-crop.png 500w"/>
+                            <source media="(min-width:600px)" srcset="./image/paw.png 700w"/>
                             <img src="./image/paw.png" alt="cat's paw photo">
                             <label for="dot3" class="pre"></label>
                             <label for="dot1" class="next"></label>
@@ -221,6 +229,7 @@
                     </div>
                     <div id="photo">
                         <p>Upload your Majestic Cat picture here:</p>
+                        <label for="upload" id="upload-btn">Choose File</label>
                         <input type="file" id="upload" name="cat photo" accept="image/png, image/jpeg" required>
                     </div>
                 </fieldset>
