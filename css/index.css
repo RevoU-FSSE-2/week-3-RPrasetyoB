@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
 * {
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
     line-height: 30px;
+    font-family: 'Belanosima', sans-serif;
 }
 
 .container {
@@ -24,6 +25,7 @@ header {
     align-items: center;
     width: 100vw;
     z-index: 99;
+    margin-top: 0;
 }
 
 .top-nav {
@@ -32,7 +34,7 @@ header {
 }
 
 .top-nav span {
-    font-size: larger;
+    font-size: 18[x];
     font-weight: 700;
 }
 
@@ -49,65 +51,206 @@ header .logo {
 
 header nav {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 header nav ul {
     display: flex;
     gap: 15px;
-    padding: 2px 15px;
+    padding: 0 10px;
+    padding-top: 5px;
+}
+
+header nav ul li a{
+    font-size: 18px;
+}
+
+header nav a {
+    font-family: cursive;
+    font-weight: 550;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: rgb(245, 128, 147);
 }
 
 .sign {
     display: flex;
     text-align: end;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
-.burger {
-    display: none; 
+.sign a{
+    font-family: verdana;
+    text-decoration: underline;
 }
 
-.line1, .line2, .line3 {
+.sign a:nth-child(2){
+    padding: 5px 6px;
+    background-color: rgb(56, 83, 133);
+    border-radius: 5px;
+    color: azure;
+}
+
+.sign a:nth-child(2):hover{
+    color: rgb(245, 128, 147);
+}
+
+#burger {
+    display: none;
+}
+
+.toggle {
+    display: none;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 15px;
+    right: 40px;
+    z-index: 21;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #dbd4d479;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #8000ff;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle .top-line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .mid-line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .bot-line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#burger:checked ~ .toggle .top-line {
+    left: 2px;
+    top: 14px;
     width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px 0;
-    transition: 0.4s;
+    transform: rotate(-45deg);
 }
 
-.change .line1 {
-    transform: translate(0, 7px) rotate(-45deg);
+#burger:checked ~ .toggle .bot-line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
 }
-  
-.change .line2 {
+
+#burger:checked ~ .toggle .mid-line {
     opacity: 0;
+    transform: translateX(20px);
 }
-  
-.change .line3 {
-    transform: translate(0, -7px) rotate(45deg);
+
+.nav-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: rgba(248, 200, 141, 0.959);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    padding-top: 70px;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+    transition: all 1s ease;
+}
+
+.nav-mobile.d-none {
+    display:none;
+    transition: all 1s ease;
+}
+
+.nav-mobile ul li {
+    line-height: 80px;
+}
+
+.nav-mobile a {
+    font-family: cursive;
+    font-weight: 550;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-mobile a:hover {
+    color: rgb(245, 128, 147);
+}
+
+.sign-side {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sign-side a{
+    font-family: verdana;
+    text-decoration: underline;
+    gap: 100px;
+    line-height: 50px;
+}
+
+.sign-side a:nth-child(2){
+    padding: 4px 6px;
+    background-color: rgb(56, 83, 133);
+    border-radius: 5px;
+    color: azure;
+}
+
+.sign-side a:nth-child(2):hover{
+    color: rgb(245, 128, 147);
+}
+
+section{
+    background-color: rgb(247, 244, 241);
 }
 
 .letter-head {
     color: azure;
     text-align: center;
-    padding-top: 60px;
     height: 350px;
     background-image: url(/image/sleep.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    object-fit: cover;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
     border-radius: 5px;
-}
-
-.letter-head {
-    gap: 20px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0px 5px;
+    padding-top: 60px;
 }
+
 
 .benefit {
     padding: 20px 20px;
@@ -115,12 +258,17 @@ header nav ul {
 
 .benefit h2 {
     font-size: 20px;
+    margin: 0 2%;
+}
 
+.benefit p{
+    margin: 0 2%;
 }
 
 .benefit ul li{
     list-style-position: inside;
     padding-left: 30px;
+    margin: 0 2%;
 }
 
 .benefit ul li::before{
@@ -200,13 +348,14 @@ header nav ul {
 .slide-container {
     margin: auto;
     position: relative;
-    width: 50%;
+    width: 60%;
     height: 0;
-    padding-bottom: 30%;
+    padding-bottom: 40%;
     background: #4c4c4c;
     border: solid 10px #2c2c2c;
     border-radius: 4px;
     text-align: center;
+    object-fit: cover;
 }
 
 .slide-img {
@@ -295,7 +444,7 @@ header nav ul {
 
 .section-form{
     margin-left: 0%;
-    background-color: rgba(53, 52, 52, 0.8);
+    background-color: rgba(219, 213, 206, 0.575);
     padding: 40px 10px;
     text-align: center;
     position: relative;
@@ -307,7 +456,8 @@ fieldset{
     margin:auto;
     margin-top: 10px;
     text-align: left;
-    padding: 20px 20px
+    padding: 20px 20px;
+    border-radius: 3px;
     
 }
 
@@ -315,11 +465,13 @@ fieldset{
     display: block;
     width: 98%;
     margin-bottom: 10px;
+    border-radius: 3px;
 }
 #email{
     display: block;
     width: 98%;
     margin-bottom: 10px;
+    border-radius: 3px;
 
 }
 
@@ -351,6 +503,7 @@ fieldset{
 
 textarea{
     width: 99%;
+    border-radius: 3px;
 }
 
 #photo{
@@ -368,7 +521,9 @@ button{
     color: rgb(60, 17, 110);
     padding: 5px 30px;
     font-size: larger;
-    font-family: fantasy;
+    font-family: fangsong;
+    font-weight: 700;
+    border-radius: 5px;
 }
 
 footer{
@@ -391,7 +546,7 @@ footer{
         display: none;
     }
 
-    .burger{
+    .toggle {
         display: block;
     }
 

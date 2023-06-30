@@ -1,6 +1,11 @@
-function burger(x) {
-    x.classList.toggle("change");
-}
+const burger =document.getElementById('burger')
+const navMenu = document.getElementsByClassName('nav-mobile')[0]
+
+burger.addEventListener('click', function(){
+    navMenu.classList.toggle('d-none')
+})
+
+
 
 function dont() {
     if (document.getElementById('ugly').checked) {

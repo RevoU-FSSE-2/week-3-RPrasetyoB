@@ -8,6 +8,7 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <title>Nyaa~</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 </head>
 <body>
     <header class="top-nav">
@@ -31,12 +32,30 @@
                 <a href="/">Log In</a>
                 <a href="/">Sign Up Now!</a>
             </div>
-            <div class="burger" onclick="burger(this)">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+            <input type="checkbox" id="burger">
+            <label for="burger" class="toggle">
+                <span class="top-line common"></span>
+                <span class="mid-line common"></span>
+                <span class="bot-line common"></span>
+            </label>
         </nav>
+        <div class="nav-mobile d-none">
+            <ul class="sideBar">
+                <li class="sideItem">
+                    <a href="/">Home</a>
+                </li>
+                <li class="sideItem">
+                    <a href="https://revou.co/" target="_blank">About</a>
+                </li>
+                <li class="sideItem">
+                    <a href="https://revou.co/" target="_blank">Contact Us</a>
+                </li>
+            </ul>
+            <div class="sign-side">
+                <a href="/">Log In</a>
+                <a href="/">Sign Up Now!</a>
+            </div>
+        </div>
     </header>
     <main class="container">
         <section class="letter-head">
@@ -136,26 +155,6 @@
                 </ul>
             </div>
         </section>
-        <section class="tips">
-            <h3>Tips How to pet Cat</h3>
-            <ol>
-                <li>
-                    Rule No.1 your Cat is Queen and your existence is for serve the Queen
-                </li>
-                <li>
-                    Dont pet a Cat if not ready to become a Slave
-                </li>
-                <li>
-                    3.00AM is time for your Cat activities dont argue about it
-                </li>
-                <li>
-                    Your Face is Cat best bed, for the sake of Cat mental healthiness
-                </li>
-                <li>
-                    Work harder and make money for Queen's Bright Future
-                </li>
-            </ol>
-           
         <section class="section-form">
             <h2>
                 Servant Registration Form
@@ -201,11 +200,11 @@
                     </div>
                     <div id="tell-us">
                         <p>Tell us why you want Serve the cat?</p>
-                        <textarea rows="3"></textarea>
+                        <textarea rows="3" placeholder="Type your reason here" name="Reason"></textarea>
                     </div>
                     <div id="photo">
                         <p>Upload your Majestic Cat picture here:</p>
-                        <input type="file" id="upload" name="catphoto" required accept="image/png, image/jpeg">
+                        <input type="file" id="upload" name="cat photo" accept="image/png, image/jpeg" required>
                     </div>
                 </fieldset>
                 <button type="submit">SUBMIT</button>
