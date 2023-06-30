@@ -166,11 +166,23 @@
                     </legend>
                     <div>
                         <label for="fullname">Full Name</label>
-                        <input id="fullname" type="text" placeholder=" Enter your Full Name here" required>
+                        <input id="fullname" type="text" placeholder="Enter your Full Name here" required>
                     </div>
                     <div>
                         <label for="email">Email Adress</label>
-                        <input id="email" type="email" placeholder=" Enter your Email here" required>
+                        <input id="email" type="email" placeholder="Enter your Email here" required>
+                    </div>
+                    <div class="location">
+                        <p>Which Continent do you from?</p>
+                        <select id="continent" name="continent" class="form-control" required>
+                            <option value="Africa">Africa</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Antartika">Antartika</option>
+                            <option value="Europe">Europe</option>
+                            <option value="North America">North America</option>
+                            <option value="South America">South America</option>
+                        </select>
                     </div>
                     <div class="radio-choice">
                         <div>
@@ -198,9 +210,14 @@
                         <input id="cute" type="checkbox" name="why">
                         <label for="cute">Cute</label>
                     </div>
+                    <div class="favorit-color">
+                        <label for="favcolor">Select your favorite Cat's Fur color:</label>
+                        <br>
+                        <input type="color" id="favcolor" name="favcolor" value="#ff0000" required>
+                    </div>
                     <div id="tell-us">
                         <p>Tell us why you want Serve the cat?</p>
-                        <textarea rows="3" placeholder=" Type your reason here" name="Reason"></textarea>
+                        <textarea rows="3" placeholder="Type your reason here" name="Reason"></textarea>
                     </div>
                     <div id="photo">
                         <p>Upload your Majestic Cat picture here:</p>
