@@ -609,6 +609,9 @@ footer{
         grid-row: 3;
     }
 
+    .cat-anatomy ul li {
+        font-size: large;
+    }
 
     textarea{
         width: 100%;
@@ -676,6 +679,9 @@ footer{
         grid-column: 3 / span 2;
         grid-row: 2;
     }
+
+    .cat-anatomy ul li {
+        font-size: medium;
 
 }
 
