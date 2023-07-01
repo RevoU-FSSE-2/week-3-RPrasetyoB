@@ -115,13 +115,13 @@ header nav ul {
 }
 
 header nav ul li a{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 header nav a {
-    font-family: cursive;
+    font-family: Belanosima;
     font-weight: 550;
-    font-size: 16px;
+    font-size: 20px;
     color: black;
     text-decoration: none;
 }
@@ -138,7 +138,7 @@ header nav a:hover {
 }
 
 .sign a{
-    font-family: verdana;
+    font-family: Belanosima;
     text-decoration: underline;
 }
 
@@ -244,7 +244,7 @@ header nav a:hover {
 }
 
 #nav-mobile a {
-    font-family: cursive;
+    font-family: Belanosima;
     font-weight: 550;
     font-size: 18px;
     color: black;
@@ -268,7 +268,7 @@ header nav a:hover {
     background-color: rgb(56, 83, 133);
     border-radius: 5px;
     color: azure;
-    font-family: verdana;
+    font-family: Belanosima;
     text-decoration: underline;
     gap: 100px;
     line-height: 50px;
@@ -600,7 +600,7 @@ button{
     color: rgb(60, 17, 110);
     padding: 5px 30px;
     font-size: larger;
-    font-family: fangsong;
+    font-family: Belanosima;
     font-weight: 700;
     border-radius: 5px;
 }
