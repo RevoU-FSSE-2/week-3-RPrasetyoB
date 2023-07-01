@@ -7,7 +7,7 @@ This Repository for my 3rd assignment in Revou Fullstack Software Engineer Bootc
 
 Main content is about Cat Article
 
-Website deployment: [Click here](https://week2-renaldipb.netlify.app/)
+Website deployment: [Click here]((https://week3-renaldipb.netlify.app/)
 
 ## Developer Tools and Elements
 [![My Skills](https://skills.thijs.gg/icons?i=html,css,js)](https://skills.thijs.gg)
