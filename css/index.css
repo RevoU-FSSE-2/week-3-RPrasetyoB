@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+@font-face {
+    font-family: 'paragraph';
+    src: url('/font/OpenSans-SemiboldItalic.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 * {
     margin: 0;
     padding: 0;
@@ -326,6 +333,7 @@ section{
 }
 
 .benefit p{
+    font-family: paragraph;
     margin: 0 2%;
 }
 
