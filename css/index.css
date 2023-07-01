@@ -39,7 +39,7 @@ header {
     width: 100vw;
     z-index: 99;
     margin-top: 0;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(15px);
 }
 
 .top-nav {
