@@ -1,11 +1,6 @@
-let slider = document.querySelector('.switch')
-slider.addEventListener('change', changeDarkMode())
-fucntion changeDarkMode(){
-    if (slider.checked) {
-        document.body.classList.add('dark')
-    } else {
-        document.body.classList.remove('dark')
-    }
+function changeMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode")
 }
 
 document.getElementById('toggle').addEventListener('click', function(){
